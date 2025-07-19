@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.f-right h4 {
+  font-size: 17px;
+  text-decoration: 1.5px underline;
+}
