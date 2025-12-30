@@ -11,6 +11,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import Page4 from "@/Components/Page4";
 import Page5 from "@/Components/Page5";
 import Footer from "@/Components/Footer";
+<<<<<<< HEAD
 import { useGSAP } from "@gsap/react";
 import gsap, { Power0, Power4 } from "gsap";
 
@@ -24,6 +25,10 @@ const page = () => {
     });
   });
 
+=======
+
+const page = () => {
+>>>>>>> 7d522ee3eba37a958d36ab71f66d91bb4bf9ba01
   useEffect(() => {
     const scroll = new LocomotiveScroll();
   });
