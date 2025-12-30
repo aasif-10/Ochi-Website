@@ -1,21 +1,24 @@
 "use client";
 import React, { useEffect } from "react";
 import Navbar from "@/Components/Navbar";
-import { GoArrowUpRight } from "react-icons/go";
 import Page1 from "@/Components/Page1";
-import { motion } from "framer-motion";
 import Marquee from "@/Components/Marquee";
 import Page2 from "@/Components/Page2";
 import Page3 from "@/Components/Page3";
-import LocomotiveScroll from "locomotive-scroll";
 import Page4 from "@/Components/Page4";
 import Page5 from "@/Components/Page5";
 import Footer from "@/Components/Footer";
-<<<<<<< HEAD
 import { useGSAP } from "@gsap/react";
-import gsap, { Power0, Power4 } from "gsap";
+import gsap, { Power4 } from "gsap";
 
 const page = () => {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   useGSAP(() => {
     gsap.from(".logo", {
       opacity: 0,
@@ -23,14 +26,6 @@ const page = () => {
       duration: 1,
       delay: 1,
     });
-  });
-
-=======
-
-const page = () => {
->>>>>>> 7d522ee3eba37a958d36ab71f66d91bb4bf9ba01
-  useEffect(() => {
-    const scroll = new LocomotiveScroll();
   });
 
   return (
